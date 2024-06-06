@@ -1,6 +1,8 @@
 # garlock-chronology
 [![DOI](https://zenodo.org/badge/811452867.svg)](https://zenodo.org/doi/10.5281/zenodo.11508484)
 
+The goal of this study is...
+
 | Step                                    |         In          |         Code         |                         Out |
 |-----------------------------------------|:-------------------:|:--------------------:|----------------------------:|
 | 1. Create event PDFs                    | Age_Constraints.csv | MCMC/KDE or gauss()  | Site_Event.csv (event PDFs) |
@@ -14,10 +16,12 @@
 Create probability density functions for each event at each site
 
 ### Example input file -- Age_Constraints.csv
+min and max ages reported in years B.P.
+errors reported as 2 sigma
 
 | event |     site      | min_age | min_err | max_age | max_err | confidence |
 |-------|:-------------:|--------:|--------:|---------|---------|------------|
-| EPP-W | El Paso Peaks |         |         |         |         |            |
+| EPP-W | El Paso Peaks |     345 |      50 |    431  | 46      |            |
 | EPP-U | El Paso Peaks |         |         |         |         |            |
 | EPP-R | El Paso Peaks |         |         |         |         |            |
 | EPP-Q | El Paso Peaks |         |         |         |         |            |
